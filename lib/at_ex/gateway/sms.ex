@@ -3,7 +3,7 @@ defmodule AtEx.Gateway.Sms do
   This module holds the implementation for the HTTP Gateway that runs calls against the Africas Talking API
   SMS endpoint, use it to POST and GET requests to the SMS endpoint
   """
-  use AtEx.Gateway.Base, url: "https://api.sandbox.africastalking.com/version1"
+  use AtEx.Gateway.Base, url: if Application.get_env(:at_ex, :endpoint,"sandbox") === "sandbox", do: "https://api.sandbox.africastalking.com/version1", else: "https://api.africastalking.com/version1"
 
   @doc """
   This function builds and runs a post request to send an SMS via the Africa's talking SMS endpoint, this

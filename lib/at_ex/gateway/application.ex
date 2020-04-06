@@ -3,7 +3,8 @@ defmodule AtEx.Gateway.Application do
   This module holds the implementation for the HTTP Gateway that runs calls against the Africas Talking API
   Application Data endpoint, use it to POST and GET requests to the Application endpoint
   """
-  use AtEx.Gateway.Base, url: "https://api.sandbox.africastalking.com/version1"
+
+  use AtEx.Gateway.Base, url: if Application.get_env(:at_ex, :endpoint,"sandbox") === "sandbox", do: "https://api.sandbox.africastalking.com/version1", else: "https://api.africastalking.com/version1"
 
   @doc """
   Collects application data from Africas Talking endpoint, Use this function to collect
