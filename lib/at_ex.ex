@@ -25,6 +25,7 @@ defmodule AtEx do
     Airtime,
     Application
   }
+
   alias AtEx.Sms.Sms
 
   @doc """
