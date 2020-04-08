@@ -13,7 +13,7 @@
                             111,110,115,46]},
               {modules,['Elixir.AtEx','Elixir.AtEx.Gateway.Airtime',
                         'Elixir.AtEx.Gateway.Application',
-                        'Elixir.AtEx.Gateway.Base','Elixir.AtEx.Gateway.Sms',
+                        'Elixir.AtEx.Gateway.Base','Elixir.AtEx.Sms.Sms',
                         'Elixir.AtEx.USSD']},
               {registered,[]},
               {vsn,"0.1.0"}]}.

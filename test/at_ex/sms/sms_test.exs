@@ -1,10 +1,10 @@
-defmodule AtEx.Gateway.SmsTest do
+defmodule AtEx.Sms.SmsTest do
   @moduledoc """
   This module holds unit tests for the functions in the SMS gateway
   """
   use ExUnit.Case
 
-  alias AtEx.Gateway.Sms
+  alias AtEx.Sms.Sms
 
   @attr "username="
 

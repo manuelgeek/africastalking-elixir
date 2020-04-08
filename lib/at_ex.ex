@@ -23,9 +23,9 @@ defmodule AtEx do
   """
   alias AtEx.Gateway.{
     Airtime,
-    Application,
-    Sms
+    Application
   }
+  alias AtEx.Sms.Sms
 
   @doc """
   Sends airtime
